@@ -14,13 +14,17 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">Tri</div>
-        <ul class="nav-links">
-            <li><a href="#tentang">About</a></li>
-            <li><a href="#kemampuan">Skills</a></li>
-            <li><a href="#proyek">Projects</a></li>
-            <li><a href="#kontak">Contact</a></li>
-        </ul>
+        <div class="navbar-container">
+            <div class="logo">Tri</div>
+            <ul class="nav-links">
+                <li><a href="#tentang">About</a></li>
+                <li><a href="#kemampuan">Skills</a></li>
+                <li><a href="#proyek">Projects</a></li>
+                <li><a href="#penghargaan">Achievements</a></li>
+                <li><a href="#minat">Interests</a></li>
+                <li><a href="#kontak">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -33,7 +37,9 @@
         <div class="hero-content">
             <h1 class="name">Hello Everyone</h1>
             <p class="description">
-                Saya <b>Tri Cahyo</b>, seorang pelajar dan <b>Pengembang Web</b> dengan minat tinggi dalam teknologi. Melalui berbagai proyek PKL dan sekolah, saya berpengalaman membangun sistem manajemen hingga antarmuka aplikasi. Saat ini menempuh pendidikan di jurusan Rekayasa Perangkat Lunak.
+                Saya <b>Tri Cahyo</b>, seorang pelajar dan <b>Pengembang Web</b> dengan minat tinggi dalam teknologi.
+                Melalui berbagai proyek PKL dan sekolah, saya berpengalaman membangun sistem manajemen hingga antarmuka
+                aplikasi. Saat ini menempuh pendidikan di jurusan Rekayasa Perangkat Lunak.
             </p>
             <div class="stats-row">
                 <span>2 Years Background</span> <span class="divider">|</span>
@@ -49,152 +55,322 @@
 
     <!-- About Section -->
     <section id="tentang" class="about">
-        <div class="section-title">
-            <h2>Tentang Saya</h2>
+        <div class="skills-title-wrapper" style="max-width: 1100px;">
+            <h2>Profile</h2>
             <div class="underline"></div>
         </div>
-        <div class="about-content">
-            <p>
-                Saya adalah seorang pelajar yang dulu nya <b>sangat tidak tertarik</b> dengan dunia teknologi, khususnya
-                rekayasa perangkat lunak. Namun sekarang saya sadar bertapa penting nya teknologi di zaman sekarang,
-                khusus nya jurusan REKAYASA PERANGKAT LUNAK (RPL).
-            </p>
-            <p>
-                Melalui berbagai tugas dan proyek praktik kerja lapangan (PKL), saya telah membangun mental yang kuat
-                dan berbagai sistem dan membangun
-                mulai dari sistem manajemen agenda hingga antarmuka kecerdasan buatan. Saya selalu antusias untuk
-                mempelajari teknologi baru dan terus mengembangkan kemampuan saya.
-            </p>
+
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    Saya adalah seorang pelajar yang dulu nya <b>sangat tidak tertarik</b> dengan dunia teknologi,
+                    khususnya
+                    rekayasa perangkat lunak. Namun sekarang saya sadar bertapa penting nya teknologi di zaman sekarang,
+                    khusus nya jurusan REKAYASA PERANGKAT LUNAK (RPL).
+                </p>
+                <p>
+                    Melalui berbagai tugas dan proyek praktik kerja lapangan (PKL), saya telah membangun mental yang
+                    kuat
+                    dan berbagai sistem dan membangun
+                    mulai dari sistem manajemen agenda hingga antarmuka kecerdasan buatan. Saya selalu antusias untuk
+                    mempelajari teknologi baru dan terus mengembangkan kemampuan saya.
+                </p>
+                <div class="about-location">
+                    <i class="fas fa-map-marker-alt"></i> Jawa Timur, Indonesia
+                </div>
+            </div>
+
+            <div class="about-sidebar">
+                <blockquote>
+                    Code without connection is just syntax.
+                </blockquote>
+                <a href="background.html" class="btn-sidebar">View Background <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="kemampuan" class="skills">
-        <div class="section-title">
-            <h2>Kemampuan Saya</h2>
+        <div class="skills-title-wrapper">
+            <h2>Skills</h2>
             <div class="underline"></div>
         </div>
-        <div class="skills-grid">
-            <!-- Skill 1 -->
-            <div class="skill-card">
-                <i class="fab fa-html5 skill-icon"></i>
-                <h3>HTML</h3>
-                <p>Membangun struktur dasar halaman web yang semantik dan dapat diakses dengan baik.</p>
+
+        <div class="skills-container">
+            <!-- Hard Skills -->
+            <div class="skill-box">
+                <div class="skill-box-header">
+                    <h3><i class="fas fa-microchip"></i> Hard Skills</h3>
+                    <button>View Stack <i class="fas fa-layer-group"></i></button>
+                </div>
+                <ul class="skill-list">
+                    <li><i class="fas fa-window-maximize"></i> Web Development</li>
+                    <li><i class="fas fa-mobile-alt"></i> Mobile Development</li>
+                    <li><i class="fas fa-robot"></i> Machine Learning Engineering</li>
+                    <li><i class="fas fa-gamepad"></i> Game Developer</li>
+                    <li><i class="fas fa-server"></i> Deployment Server</li>
+                </ul>
             </div>
-            <!-- Skill 2 -->
-            <div class="skill-card">
-                <i class="fab fa-css3-alt skill-icon"></i>
-                <h3>CSS</h3>
-                <p>Mendesain tampilan web yang menarik, interaktif, dan responsif untuk berbagai perangkat.</p>
+
+            <!-- Soft Skills -->
+            <div class="skill-box">
+                <div class="skill-box-header">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <button>View Details <i class="fas fa-layer-group"></i></button>
+                </div>
+                <ul class="skill-list">
+                    <li><i class="far fa-lightbulb"></i> Problem Solving</li>
+                    <li><i class="fas fa-user-friends"></i> Teamwork & Communication</li>
+                    <li><i class="fas fa-book-reader"></i> Self-directed learning</li>
+                    <li><i class="far fa-clock"></i> Time Management</li>
+                    <li><i class="fas fa-shield-alt"></i> Adaptability & Reliability</li>
+                </ul>
             </div>
-            <!-- Skill 3 -->
-            <div class="skill-card">
-                <i class="fab fa-bootstrap skill-icon"></i>
-                <h3>Bootstrap</h3>
-                <p>Menggunakan framework CSS untuk mempercepat pengembangan tampilan web yang profesional.</p>
-            </div>
-            <!-- Skill 4 -->
-            <div class="skill-card">
-                <i class="fab fa-python skill-icon"></i>
-                <h3>Python</h3>
-                <p>Pemrograman backend, analisis data, serta pengembangan berbagai jenis skrip dan otomatisasi.</p>
-            </div>
-            <!-- Skill 5 -->
-            <div class="skill-card">
-                <i class="fas fa-cogs skill-icon"></i>
-                <h3>Odoo</h3>
-                <p>Implementasi dan kustomisasi sistem ERP untuk membantu pengelolaan operasional bisnis.</p>
-            </div>
-            <!-- Skill 6 -->
-            <div class="skill-card">
-                <i class="fab fa-laravel skill-icon"></i>
-                <h3>Laravel</h3>
-                <p>Pengembangan backend sistem informasi yang kuat dan aman menggunakan framework PHP.</p>
+        </div>
+
+        <div class="tech-stack-box">
+            <h3><i class="fas fa-layer-group"></i> Tech Stack Overview</h3>
+            <div class="tech-badges">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">Bootstrap</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Odoo</span>
+                <span class="tech-badge">Supabase</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Ubuntu</span>
+                <span class="tech-badge">CSV/XML</span>
+                <span class="tech-badge">Proxmox</span>
+                <span class="tech-badge">Git</span>
+                <span class="tech-badge">Fumadocs</span>
+                <span class="tech-badge">VS Code</span>
+                <span class="tech-badge">Antigravity</span>
+                <span class="tech-badge">GitHub</span>
+                <span class="tech-badge">Instagram</span>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
+    <!-- Projects Section -->
     <section id="proyek" class="projects">
-        <div class="section-title">
-            <h2>Proyek Unggulan</h2>
-            <div class="underline"></div>
+        <div class="projects-header">
+            <div class="skills-title-wrapper" style="margin: 0;">
+                <h2>Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <a href="#" class="btn-project">Browse All <i class="fas fa-th-large"></i></a>
         </div>
-
-        <p class="projects-description">
-            Selama saya sekolah, saya telah membuat berbagai macam proyek, mulai dari proyek sekolah
-            hingga proyek PKL, dan proyek-proyek ini telah membantu saya untuk mengembangkan kemampuan saya
-            dalam pengembangan aplikasi web dan juga mental saya dalam dunia teknologi, PKL memberikan saya
-            pengalaman yang berharga dalam dunia kerja.
-        </p>
 
         <div class="projects-grid">
             <!-- Project 1 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="parkir.png" alt="Aplikasi Parkir">
+                <div class="project-top">
+                    <span class="project-category">2026 • WEBSITE</span>
+                    <i class="fas fa-globe project-icon"></i>
                 </div>
-                <div class="project-info">
-                    <h3>Aplikasi Parkir (UKK)</h3>
-                    <p>Sistem manajemen parkir yang dikembangkan untuk Uji Kompetensi Keahlian (UKK). Dilengkapi dengan
-                        fitur dashboard admin, pengelolaan area parkir, kendaraan, dan log aktivitas.</p>
-                </div>
+                <h3>Aplikasi Parkir (UKK)</h3>
+                <p class="project-subtitle">Personal Project / UKK</p>
+                <ul class="project-list">
+                    <li>Sistem manajemen parkir yang dikembangkan untuk Uji Kompetensi Keahlian.</li>
+                    <li>Fitur dashboard admin, pengelolaan area parkir, kendaraan, dan log aktivitas.</li>
+                </ul>
+                <a href="#" class="btn-project">Details <i class="fas fa-arrow-right"></i></a>
             </div>
+
             <!-- Project 2 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="document.png" alt="Odoo Document">
+                <div class="project-top">
+                    <span class="project-category">2026 • ODOO ERP</span>
+                    <i class="fas fa-database project-icon"></i>
                 </div>
-                <div class="project-info">
-                    <h3>Odoo Document Management</h3>
-                    <p>Implementasi dan kustomisasi modul Document pada sistem ERP Odoo selama masa Praktik Kerja
-                        Lapangan (PKL), mempermudah manajemen dan pelacakan dokumen secara terpusat.</p>
-                </div>
+                <h3>Odoo Document Management</h3>
+                <p class="project-subtitle">PKL Project</p>
+                <ul class="project-list">
+                    <li>Implementasi dan kustomisasi modul Document pada sistem ERP Odoo.</li>
+                    <li>Mempermudah manajemen dan pelacakan dokumen secara terpusat.</li>
+                </ul>
+                <a href="#" class="btn-project">View System <i class="fas fa-external-link-alt"></i></a>
             </div>
+
             <!-- Project 3 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="pesantren.png" alt="Odoo Pesantren">
+                <div class="project-top">
+                    <span class="project-category">2026 • ODOO ERP</span>
+                    <i class="fas fa-school project-icon"></i>
                 </div>
-                <div class="project-info">
-                    <h3>Odoo Pesantrent</h3>
-                    <p>Pengembangan sistem informasi manajemen pesantren menggunakan Odoo ERP selama masa PKL. Mencakup
-                        modul santri, pendaftaran (PSB), kesantrian, hingga keuangan.</p>
-                </div>
+                <h3>Odoo Pesantren</h3>
+                <p class="project-subtitle">PKL Project</p>
+                <ul class="project-list">
+                    <li>Pengembangan sistem informasi manajemen pesantren menggunakan Odoo ERP.</li>
+                    <li>Mencakup modul santri, pendaftaran (PSB), kesantrian, hingga keuangan.</li>
+                </ul>
+                <a href="#" class="btn-project">View System <i class="fas fa-external-link-alt"></i></a>
             </div>
+
             <!-- Project 4 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="agenda.png" alt="Agenda Surat Digital">
+                <div class="project-top">
+                    <span class="project-category">2026 • WEBSITE</span>
+                    <i class="fas fa-envelope project-icon"></i>
                 </div>
-                <div class="project-info">
-                    <h3>Agenda Surat Digital</h3>
-                    <p>Aplikasi web untuk mengelola surat masuk dan surat keluar dengan mudah, cepat, dan terstruktur.
-                        Menawarkan antarmuka pengguna yang bersih dan minimalis.</p>
-                </div>
+                <h3>Agenda Surat Digital</h3>
+                <p class="project-subtitle">Personal Project</p>
+                <ul class="project-list">
+                    <li>Aplikasi web untuk mengelola surat masuk dan surat keluar dengan mudah.</li>
+                    <li>Menawarkan antarmuka pengguna yang bersih dan minimalis.</li>
+                </ul>
+                <a href="#" class="btn-project">Live Demo <i class="fas fa-external-link-alt"></i></a>
             </div>
+
             <!-- Project 5 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="kostin.png" alt="Odoo KostIN">
+                <div class="project-top">
+                    <span class="project-category">2026 • ODOO ERP</span>
+                    <i class="fas fa-home project-icon"></i>
                 </div>
-                <div class="project-info">
-                    <h3>Odoo KostIN</h3>
-                    <p>Sistem manajemen berbasis Odoo ERP yang dirancang khusus untuk mengelola properti kos-kosan dan
-                        penghuninya di seluruh provinsi di Indonesia secara terintegrasi.</p>
-                </div>
+                <h3>Odoo KostIN</h3>
+                <p class="project-subtitle">PKL Project</p>
+                <ul class="project-list">
+                    <li>Sistem manajemen kos-kosan berbasis Odoo ERP.</li>
+                    <li>Mengelola properti dan penghuni di seluruh provinsi secara terintegrasi.</li>
+                </ul>
+                <a href="#" class="btn-project">View System <i class="fas fa-external-link-alt"></i></a>
             </div>
+
             <!-- Project 6 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="hospitality.png" alt="Odoo Hospitality">
+                <div class="project-top">
+                    <span class="project-category">2026 • ODOO ERP</span>
+                    <i class="fas fa-hospital project-icon"></i>
                 </div>
-                <div class="project-info">
-                    <h3>Odoo Hospitality</h3>
-                    <p>Sistem ERP Odoo untuk manajemen perhotelan dan layanan kesehatan (hospitality/klinik). Mengelola
-                        layanan, pemesanan (booking), pendapatan, karyawan, dan menyajikan laporan analitik secara
-                        terpadu.</p>
+                <h3>Odoo Hospitality</h3>
+                <p class="project-subtitle">PKL Project</p>
+                <ul class="project-list">
+                    <li>Sistem ERP untuk manajemen perhotelan dan layanan kesehatan (klinik).</li>
+                    <li>Mengelola layanan, pemesanan, pendapatan, karyawan, dan laporan analitik.</li>
+                </ul>
+                <a href="#" class="btn-project">View System <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="penghargaan" class="projects" style="padding-top: 0;">
+        <div class="projects-header">
+            <div class="skills-title-wrapper" style="margin: 0;">
+                <h2>Achievements</h2>
+                <div class="underline"></div>
+            </div>
+            <a href="#" class="btn-project">Lihat Detail</a>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Achievement 1 -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-category">INTERNASIONAL • 2025</span>
+                    <i class="fas fa-award project-icon"></i>
                 </div>
+                <h3>Silver Medal JISF</h3>
+                <p class="project-subtitle">Jakarta International Science Fair</p>
+                <ul class="project-list" style="margin-bottom: 0;">
+                    <li>Meraih medali perak dalam kompetisi presentasi Ilmiah Internasional.</li>
+                    <li>Mempresentasikan inovasi teknologi menggunakan Bahasa Inggris.</li>
+                </ul>
+            </div>
+
+            <!-- Achievement 2 -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-category">NASIONAL • 2024</span>
+                    <i class="fas fa-award project-icon"></i>
+                </div>
+                <h3>BRAFO Olympiad</h3>
+                <p class="project-subtitle">Silver Medal Informatika</p>
+                <ul class="project-list" style="margin-bottom: 0;">
+                    <li>Memenangkan medali perak dalam olimpiade informatika tingkat nasional.</li>
+                    <li>Menyelesaikan tantangan algoritma dan pemrograman kompleks.</li>
+                </ul>
+            </div>
+
+            <!-- Achievement 3 -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-category">NASIONAL • 2024</span>
+                    <i class="fas fa-award project-icon"></i>
+                </div>
+                <h3>BRAFO Olympiad</h3>
+                <p class="project-subtitle">Gold Medal Bahasa Inggris</p>
+                <ul class="project-list" style="margin-bottom: 0;">
+                    <li>Meraih medali emas dalam kompetisi penguasaan Bahasa Inggris nasional.</li>
+                    <li>Menunjukkan kemahiran dalam pemahaman teks dan tata bahasa.</li>
+                </ul>
+            </div>
+
+            <!-- Achievement 4 -->
+            <div class="project-card" style="border-color: rgba(0, 0, 0, 0.8);">
+                <div class="project-top">
+                    <span class="project-category">INTERNAL • 2025</span>
+                    <i class="fas fa-award project-icon"></i>
+                </div>
+                <h3>SMKN 8 JEMBER</h3>
+                <p class="project-subtitle">Juara 1 LKS AI</p>
+                <ul class="project-list" style="margin-bottom: 0;">
+                    <li>Juara pertama dalam Lomba Kompetensi Siswa bidang Artificial Intelligence.</li>
+                    <li>Mengembangkan model prediksi menggunakan Python & Jupyter Notebook.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Interests Section -->
+    <section id="minat" class="projects" style="padding-top: 0;">
+        <div class="projects-header">
+            <div class="skills-title-wrapper" style="margin: 0;">
+                <h2>Interests</h2>
+                <div class="underline"></div>
+            </div>
+        </div>
+
+        <div class="interests-grid">
+            <div class="interest-card">
+                <div class="interest-icon-box"><i class="fas fa-music"></i></div>
+                <h3>Music Listener</h3>
+                <p>Mendengarkan berbagai genre musik seperti Lofi, Pop, dan OST game favorit sebagai teman belajar dan
+                    pengisi waktu luang.</p>
+            </div>
+            <div class="interest-card">
+                <div class="interest-icon-box"><i class="fas fa-gamepad"></i></div>
+                <h3>Gaming</h3>
+                <p>Menyukai game genre RPG, simulator, dan strategi. Game favorit saya adalah Minecraft, dan berbagai
+                    game indie lainnya.</p>
+            </div>
+            <div class="interest-card">
+                <div class="interest-icon-box"><i class="fas fa-dumbbell"></i></div>
+                <h3>Fitness</h3>
+                <p>Fokus pada disiplin latihan untuk memiliki tenaga yang kuat, stamina yang banyak, dan menjaga
+                    kesehatan tubuh secara konsisten.</p>
+            </div>
+            <div class="interest-card">
+                <div class="interest-icon-box"><i class="fas fa-pencil-alt"></i></div>
+                <h3>Drawing</h3>
+                <p>Menggambar berbagai objek seperti karakter dan desain UI/UX, saya suka menggambar di media digital
+                    maupun tradisional.</p>
+            </div>
+            <div class="interest-card">
+                <div class="interest-icon-box"><i class="fas fa-book-open"></i></div>
+                <h3>Reading</h3>
+                <p>Membaca buku dari berbagai genre seperti teknologi dan ilmu pengetahuan untuk memperluas wawasan dan
+                    pemahaman.</p>
+            </div>
+            <div class="interest-card">
+                <div class="interest-icon-box"><i class="fas fa-code"></i></div>
+                <h3>Creative Coding</h3>
+                <p>Belajar terkait fullstack dan web development, dan server, untuk framework saya suka dengan Laravel,
+                    Odoo, dan Python.</p>
             </div>
         </div>
     </section>
